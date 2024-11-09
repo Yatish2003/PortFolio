@@ -1,0 +1,115 @@
+/* Base styles */
+.project-main {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #2E4052;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.project-main h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-cards {
+    background-color: #2E4052;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: white;
+    margin: 10px;
+}
+
+.project-cards:hover {
+    transform: scale(1.05);
+}
+
+.project-cards img {
+    width: 100%;
+    height: auto;
+}
+
+#project-name {
+    font-size: 1em;
+    text-align: center;
+    margin: 10px 0;
+    color: #D9D9D9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.description {
+    font-size: 0.8em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Styles for Breakpoints */
+
+/* For screens below 800px */
+@media (max-width: 800px) {
+    .project-main {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .project-cards {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .card-content {
+        gap: 15px;
+    }
+
+    .project-main h1 {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+}
+
+/* For screens below 400px */
+@media (max-width: 400px) {
+    .project-main {
+        padding: 10px;
+    }
+
+    .project-cards {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-content {
+        gap: 10px;
+    }
+
+    .project-main h1 {
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 0.75em;
+    }
+
+    #project-name {
+        font-size: 0.9em;
+    }
+}

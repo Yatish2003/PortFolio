@@ -1,0 +1,123 @@
+.contact{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+
+}
+.cnt-main {
+    background-color: #2E4052;  
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;  
+    color: #fff;  
+}
+
+.border-div {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+/* Form Container Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Label and Input Fields */
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="email"]:focus, textarea:focus {
+    border-color: #4CAF50;  
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    background-color: #4CAF50;  
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;  
+}
+
+button:disabled {
+    background-color: #ccc;  
+    cursor: not-allowed;
+}
+
+/* Social Media Icons */
+.social-icons{
+    width: 100%;
+    text-align: center;
+}
+i {
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+i:hover {
+    transform: scale(1.2);  
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        gap: 10px;
+    }
+
+    .border-div {
+        width: 90%;  
+        padding: 15px;
+    }
+
+    label, input, textarea, button {
+        font-size: 14px;  
+    }
+
+    i {
+        font-size: 20px;  
+    }
+}
+
+@media (max-width: 480px) {
+    .cnt-main {
+        padding: 20px; 
+    }
+
+    .border-div {
+        width: 100%;  
+    }
+
+    i {
+        margin: 5px;  
+    }
+}

@@ -1,0 +1,98 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: #2E4052;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li a {
+    color: aliceblue;
+}
+
+ul li {
+    padding: 10px 20px;
+
+}
+
+/* pop up */
+
+
+
+li::after {
+    position: relative;
+    left: 50%;
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    display: block;
+    border-radius: 1cm;
+    transition: all 0.8s;
+
+}
+
+li:hover::after {
+    position: relative;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+}
+
+li:hover::before {
+    position: relative;
+    width: 100%;
+    right: 0%;
+    left: 0%;
+}
+
+/* line wise */
+/* li::before{
+            position: relative;
+          
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: yellow;
+            display: block;
+            border-radius: 1cm;
+            transition: all 0.8s;
+        }
+        li::after{
+            position: relative;
+          left: 100%;
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: yellow;
+            display: block;
+            border-radius: 1cm; 
+            transition:all 0.8s; 
+
+        }
+        li:hover::after{
+            position: relative;
+            left: 0%;
+            width: 100%;
+            
+        }
+        li:hover::before{
+            position: relative;
+            width: 100%;
+        
+        } */

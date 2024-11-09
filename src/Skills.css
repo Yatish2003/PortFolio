@@ -1,0 +1,106 @@
+ /* Universal reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+/* Heading styling */
+#heading {
+    font-size: 32px;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+/* Skills Section */
+.skills {
+    width: 100%;
+    /* height: 120vh;  */
+    background-color: #2E4052;
+    text-align: center;
+    padding: 15px;
+}
+
+.main {
+    margin-top: 10px;
+    width: 98%;
+    height: auto;
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#languages {
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Card Styling */
+.cards {
+    width: 20%; /* Default card width */
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10%;
+    margin: 20px;
+    background-color: #0b1016;
+    padding: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensures content is evenly spaced inside the card */
+}
+
+.cards img {
+    width: 50%;
+    height: 120px;
+    object-fit: cover; /* Ensures images don't distort */
+}
+
+/* Card Hover Effect */
+.cards:hover {
+    background-color: #1F2A37;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* For screens up to 1000px */
+@media (max-width: 1000px) {
+    .cards {
+        width: 30%; /* Adjust width to 30% */
+    }
+}
+
+/* For smaller screens (max-width: 800px) */
+@media (max-width: 800px) {
+    .cards {
+        width: 45%; /* Adjust card width to 45% */
+    }
+
+    .main {
+        justify-content: center; /* Center the cards */
+    }
+
+    #heading {
+        font-size: 28px; /* Adjust heading size */
+    }
+}
+
+/* For mobile screens (max-width: 500px) */
+@media (max-width: 500px) {
+    .cards {
+        width: 80%; /* Cards take up 80% width */
+        height: auto; /* Let card height adjust based on content */
+        margin: 10px auto; /* Center the cards */
+    }
+
+    #heading {
+        font-size: 24px; /* Further reduce font size */
+    }
+
+    .skills {
+        height: auto; /* Let height adjust on small screens */
+    }
+}
