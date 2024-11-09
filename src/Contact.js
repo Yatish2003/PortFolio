@@ -14,7 +14,7 @@ function Contact() {
         <>
 
 <h1 className="contact">Get in Touch!</h1>
-<div className="cnt-main">
+<div className="cnt-main" id='contact'>
     <div className="border-div">
         <form onSubmit={handleSubmit}>
             <div className="form-container">

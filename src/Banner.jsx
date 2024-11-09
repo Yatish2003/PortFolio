@@ -3,7 +3,7 @@ import "./Banner.css"
 function Banner() {
     return (
         <>
-            <div className="Home">
+            <div className="Home" >
                 <div className="Home-child1">
 
                     <img src="me.png" />
